@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa2aedf-54be-4ec2-a058-e5b8ff972c34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Header/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Music/Music.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Navbar/Navbar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/News/News.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/post/Post.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/post/Post.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/components/Setting/Setting.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profile.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,16 +49,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src/components/Profiles" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\Profiles" />
       <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\Profiles" />
+      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\profile" />
+      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\navbar" />
+      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\header" />
       <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app" />
     </key>
   </component>
@@ -48,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638027558455</updated>
-      <workItem from="1638027561327" duration="1982000" />
+      <workItem from="1638027561327" duration="16709000" />
     </task>
     <servers />
   </component>

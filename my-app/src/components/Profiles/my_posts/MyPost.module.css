@@ -1,0 +1,22 @@
+.new_post {
+    padding: 0 20px;
+}
+
+.new_post .input_button {
+    display: flex;
+    height: 40px;
+}
+
+.new_post input {
+    width: 74%;
+}
+
+.new_post button {
+    width: 25%;
+    margin-left: 1%;
+}
+
+.my_post {
+    padding: 20px;
+}
+

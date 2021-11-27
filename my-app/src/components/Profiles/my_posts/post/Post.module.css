@@ -1,0 +1,29 @@
+.post_items {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom:15px;
+}
+.img_text{
+    display: flex;
+}
+.img_text img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.text{
+    padding-left: 20px;
+}
+.like{
+    background-color: transparent;
+    border: 0;
+    color: salmon;
+}
+.like:hover{
+    color: darkred;
+}
+.like_dislike{
+    display: flex;
+    justify-content: flex-end;
+}
