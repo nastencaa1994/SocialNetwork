@@ -11,3 +11,10 @@
   background-color: #f2f2f2;
   grid-area: c;
 }
+a.active{
+  color: salmon!important;
+}
+body{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}

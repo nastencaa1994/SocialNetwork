@@ -1,3 +1,50 @@
 .dialogs{
     display: flex;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+.people_column{
+    width: 30%;
+    padding: 30px 10px;
+    border-right: 2px solid wheat;
+}
+.messages{
+    width: 70%;
+    padding: 30px;
+}
+.people_items{
+    padding: 10px 20px;
+}
+.people_items:hover{
+    background-color: white;
+}
+.incoming{
+    display: flex;
+    flex-direction: column;
+}
+.incoming_items{
+    background-color: wheat;
+    border-radius: 30px;
+    width: 40%;
+    padding: 20px 30px;
+}
+.text{
+    padding-top: 10px;
+}
+.time{
+    font-size: 14px;
+}
+.outgoing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.outgoing_items{
+    background-color:#ccffcc;
+    border-radius: 30px;
+    width: 40%;
+    padding: 20px 30px;
+}
+.active_people_items{
+    background-color: white;
 }
