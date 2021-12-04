@@ -1,7 +1,8 @@
 import s from "./MyPost.module.css";
 import Post from "./post/Post";
 
-const MyPost = () =>{
+const MyPost = (props) =>{
+    let myPostEl = props.date.map(el=>(<Post message={el.text} countLike={el.countLike}/>))
     return(
         <div>
             <div className={s.new_post}>
@@ -12,8 +13,7 @@ const MyPost = () =>{
                 </div>
             </div>
             <div className={s.my_post}>
-                <Post message='Hi, hoe are you?' countLike="48"/>
-                <Post message="It's my first post" countLike="14"/>
+                {myPostEl}
             </div>
 
         </div>

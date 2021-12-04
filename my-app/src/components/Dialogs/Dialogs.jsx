@@ -1,41 +1,22 @@
 import s from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
+import DialogItem from "./DialogItem/DialogItem";
+import MessageIncoming from "./Messages/MessagesIncoming";
+import MessageOutgoing from "./Messages/MessageOutgoing";
 
-const Dialogs = (props)=>{
-    return(
-    <div className={s.dialogs}>
-        <div className={s.people_column}>
-            <div className={`${s.people_items} ${s.active_people_items}`}>
-                <NavLink to='/dialogs/5'>Настя</NavLink>
+const Dialogs = (props) => {
+
+    let dialogsElement = props.dialogsData.map(el => (<DialogItem name={el.name} id={el.id}/>))
+    let messageEl = props.message.map(el => el.type === 'incoming' ? (<MessageIncoming time={el.time} text={el.text}/>) : (<MessageOutgoing time={el.time} text={el.text}/>))
+
+    return (
+        <div className={s.dialogs}>
+            <div className={s.people_column}>
+                {dialogsElement}
             </div>
-            <div className={s.people_items}>
-                <NavLink to='/dialogs/1'>Настя</NavLink>
-            </div>
-            <div className={s.people_items}>
-                <NavLink to='/dialogs/2'>Настя</NavLink>
-            </div>
-            <div className={s.people_items}>
-                <NavLink to='/dialogs/3'>Настя</NavLink>
-            </div>
-            <div className={s.people_items}>
-                <NavLink to='/dialogs/4'>Настя</NavLink>
+            <div className={s.messages}>
+                {messageEl}
             </div>
         </div>
-        <div className={s.messages}>
-            <div className={s.incoming}>
-                <div className={s.incoming_items}>
-                <div className={s.time}>23:52</div>
-                <div className={s.text}>hello</div>
-                </div>
-            </div>
-            <div className={s.outgoing}>
-                <div className={s.outgoing_items}>
-                <div className={s.time}>00:05</div>
-                <div className={s.text}>How are you?</div>
-                </div>
-            </div>
-        </div>
-    </div>
     );
 }
 export default Dialogs

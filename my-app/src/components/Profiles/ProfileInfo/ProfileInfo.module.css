@@ -1,0 +1,14 @@
+.avatar_description {
+    display: flex;
+    padding:20px 20px 0 20px;
+}
+.avatar {
+    width: 25%;
+}
+.img{
+    width: 100%;
+}
+.description {
+    width: 70%;
+    padding-left: 30px;
+}
