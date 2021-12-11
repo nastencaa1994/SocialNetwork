@@ -9,8 +9,9 @@ const Profile=(props)=>{
                 <img className={s.banner_profile} src="https://pixy.org/src/474/4741466.jpg" alt=""/>
             </div>
             <ProfilrInfo/>
-        <MyPost date={props.myPost}/>
+        <MyPost date={props.state.myPost}/>
         </div>
     );
 }
+
 export default Profile;

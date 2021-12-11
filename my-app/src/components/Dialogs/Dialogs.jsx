@@ -5,8 +5,8 @@ import MessageOutgoing from "./Messages/MessageOutgoing";
 
 const Dialogs = (props) => {
 
-    let dialogsElement = props.dialogsData.map(el => (<DialogItem name={el.name} id={el.id}/>))
-    let messageEl = props.message.map(el => el.type === 'incoming' ? (<MessageIncoming time={el.time} text={el.text}/>) : (<MessageOutgoing time={el.time} text={el.text}/>))
+    let dialogsElement = props.state.dialogsData.map(el => (<DialogItem name={el.name} id={el.id}/>))
+    let messageEl = props.state.message.map(el => el.type === 'incoming' ? (<MessageIncoming time={el.time} text={el.text}/>) : (<MessageOutgoing time={el.time} text={el.text}/>))
 
     return (
         <div className={s.dialogs}>

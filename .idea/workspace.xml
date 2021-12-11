@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fa2aedf-54be-4ec2-a058-e5b8ff972c34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Messages/MessageOutgoing.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Messages/MessagesIncoming.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/ProfileInfo/ProfilrInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +62,9 @@
       <workItem from="1638252262334" duration="92000" />
       <workItem from="1638255942141" duration="5155000" />
       <workItem from="1638261188355" duration="7000" />
-      <workItem from="1638621599550" duration="11852000" />
+      <workItem from="1638621599550" duration="13045000" />
+      <workItem from="1638770730818" duration="125000" />
+      <workItem from="1639223478107" duration="2616000" />
     </task>
     <servers />
   </component>
