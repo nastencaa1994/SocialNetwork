@@ -2,7 +2,7 @@ let state={
     profilePage:{
         myPost: [
             {id: 1, text: "Hi, hoe are you?", countLike: 41},
-            {id: 1, text: "It's my first pos", countLike: 14}
+            {id: 2, text: "It's my first pos", countLike: 14}
         ],
 
     },
@@ -21,6 +21,16 @@ let state={
             {id: 5, name: 'Наташа'}
         ]
     },
-    siteBar:{}
+    sidebar:{}
 }
+
+export let addPost= (postMessage) => {
+    let newPost = {
+        id:3,
+        text: postMessage,
+        countLike:5
+    }
+   state.profilePage.myPost.push(newPost);
+}
+
 export default state
