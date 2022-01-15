@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e80a7fff-45cb-496b-95c6-77cb4bd62191" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-app/src/render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace (2).xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/render.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642248294427</updated>
-      <workItem from="1642248297416" duration="5822000" />
+      <workItem from="1642248297416" duration="8388000" />
     </task>
     <servers />
   </component>

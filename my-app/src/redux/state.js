@@ -7,6 +7,7 @@ let state={
             {id: 1, text: "Hi, hoe are you?", countLike: 41},
             {id: 2, text: "It's my first pos", countLike: 14}
         ],
+        newPostText:"Введите текст"
 
     },
     dialogsPage:{
@@ -34,7 +35,7 @@ export let addPost= (postMessage) => {
         countLike:0
     }
    state.profilePage.myPost.push(newPost);
-    rerenderEntireTree()
+    rerenderEntireTree(state)
 }
 
 export default state
