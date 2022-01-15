@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fa2aedf-54be-4ec2-a058-e5b8ff972c34" name="Default Changelist" comment="">
+    <list default="true" id="e80a7fff-45cb-496b-95c6-77cb4bd62191" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-app/src/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace (2).xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/redux/state.js" afterDir="false" />
@@ -22,8 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="21VY82Bybf5SkKGHmIwJ3Eoz4QX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="23jX6VfOTEQSh6XapYYx7zUhz7F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,42 +29,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src/components/Profiles" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\Profiles" />
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\Profiles" />
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\profile" />
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\navbar" />
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\components\header" />
-      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1fa2aedf-54be-4ec2-a058-e5b8ff972c34" name="Default Changelist" comment="" />
-      <created>1638027558455</created>
+      <changelist id="e80a7fff-45cb-496b-95c6-77cb4bd62191" name="Default Changelist" comment="" />
+      <created>1642248294427</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638027558455</updated>
-      <workItem from="1638027561327" duration="17094000" />
-      <workItem from="1638193140139" duration="122000" />
-      <workItem from="1638202118715" duration="6871000" />
-      <workItem from="1638252262334" duration="92000" />
-      <workItem from="1638255942141" duration="5155000" />
-      <workItem from="1638261188355" duration="7000" />
-      <workItem from="1638621599550" duration="13045000" />
-      <workItem from="1638770730818" duration="125000" />
-      <workItem from="1639223478107" duration="2616000" />
-      <workItem from="1639302261342" duration="7150000" />
+      <updated>1642248294427</updated>
+      <workItem from="1642248297416" duration="5822000" />
     </task>
     <servers />
   </component>
@@ -84,6 +57,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

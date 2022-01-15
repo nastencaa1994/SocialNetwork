@@ -7,6 +7,7 @@ const MyPost = (props) =>{
 
     let newPostEl=React.createRef()
 
+
     function addPost(){
        let text= newPostEl.current.value
         props.addPost(text)

@@ -1,3 +1,6 @@
+import React from "react";
+import {rerenderEntireTree} from "../render";
+
 let state={
     profilePage:{
         myPost: [
@@ -28,9 +31,10 @@ export let addPost= (postMessage) => {
     let newPost = {
         id:3,
         text: postMessage,
-        countLike:5
+        countLike:0
     }
    state.profilePage.myPost.push(newPost);
+    rerenderEntireTree()
 }
 
 export default state
