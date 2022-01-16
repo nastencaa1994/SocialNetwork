@@ -1,5 +1,8 @@
 import React from "react";
-import {rerenderEntireTree} from "../render";
+
+let rerenderEntireTree=()=>{
+    console.log('state change')
+}
 
 let state={
     profilePage:{
@@ -28,14 +31,21 @@ let state={
     sidebar:{}
 }
 
-export let addPost= (postMessage) => {
+export const addPost= () => {
     let newPost = {
         id:3,
-        text: postMessage,
+        text:  state.profilePage.newPostText,
         countLike:0
     }
    state.profilePage.myPost.push(newPost);
+    state.profilePage.newPostText=''
     rerenderEntireTree(state)
 }
-
-export default state
+export const newTextFunction = (text) => {
+    state.profilePage.newPostText=text;
+    rerenderEntireTree(state)
+}
+export const subcribe = (observer)=>{
+    rerenderEntireTree = observer;
+}
+    export default state

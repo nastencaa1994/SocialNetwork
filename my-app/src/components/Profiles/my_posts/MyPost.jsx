@@ -8,19 +8,19 @@ const MyPost = (props) =>{
     let newPostEl=React.createRef()
 
     function addPost(){
-       let text= newPostEl.current.value
-        props.addPost(text)
+        props.addPost()
         newPostEl.current.value=''
     }
     let onPostChange=()=>{
-
+        let text= newPostEl.current.value
+        props.newTextFunction(text)
     }
     return(
         <div>
             <div className={s.new_post}>
                 <h2>My post</h2>
                 <div className={s.input_button}>
-                    <input type="text" ref={newPostEl} onChange={onPostChange} placeholder='News...' value={props.newPostText.newPostText}/>
+                    <input type="text" ref={newPostEl} onChange={onPostChange} value={props.newPostText}/>
                     <button onClick={addPost}>Поделиться</button>
                 </div>
             </div>
