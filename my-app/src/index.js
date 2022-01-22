@@ -6,13 +6,12 @@ import {render} from "react-dom"
 import App from "./App";
 
 
-
 const contentElement = document.getElementById("root")
 
-export let rerenderEntireTree=()=>{
+export let rerenderEntireTree = () => {
     render(
         <BrowserRouter>
-            < App state={store.getState()} addPost={store.addPost.bind(store)} newTextFunction={store.newTextFunction.bind(store)}/>
+            < App state={store.getState()} dispatch={store.dispatch.bind(store)}/>
         </BrowserRouter>
         , contentElement
     );

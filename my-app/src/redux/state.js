@@ -9,7 +9,7 @@ let store = {
                 {id: 1, text: "Hi, hoe are you?", countLike: 41},
                 {id: 2, text: "It's my first pos", countLike: 14}
             ],
-            newPostText: "Введите текст"
+            newPostText: ""
 
         },
         dialogsPage: {
@@ -29,35 +29,55 @@ let store = {
         },
         sidebar: {}
     },
-
-    getState(){
-        return this._state
-    },
-
     //метод перезагрузки С заглушкой
     _callSubscriber() {
         console.log('state change')
     },
-    //метод добавления поста
-    addPost() {
-        let newPost = {
-            id: 3,
-            text: this._state.profilePage.newPostText,
-            countLike: 0
-        }
-        this._state.profilePage.myPost.push(newPost);
-        this._state.profilePage.newPostText = ''
-        this._callSubscriber(this._state)
-    },
-    //метод отслеживание, изменение и перерисовка текста в поле новый пост
-    newTextFunction (text){
-        this._state.profilePage.newPostText = text;
-        this._callSubscriber(this._state)
-    },
 
+
+    getState(){
+        return this._state
+    },
     subscribe (observer)  {
         this._callSubscriber = observer;
-    }
+    },
+
+
+    // //метод добавления поста
+    // addPost() {
+    //     let newPost = {
+    //         id: 3,
+    //         text: this._state.profilePage.newPostText,
+    //         countLike: 0
+    //     }
+    //     this._state.profilePage.myPost.push(newPost);
+    //     this._state.profilePage.newPostText = ''
+    //     this._callSubscriber(this._state)
+    // },
+    // //метод отслеживание, изменение и перерисовка текста в поле новый пост
+    // newTextFunction (text){
+    //     this._state.profilePage.newPostText = text;
+    //     this._callSubscriber(this._state)
+    // },
+
+    dispatch(action){
+        if(action.type==='ADD_POST'){
+            let newPost = {
+                id: 3,
+                text: this._state.profilePage.newPostText,
+                countLike: 0
+            }
+            this._state.profilePage.myPost.push(newPost);
+            this._state.profilePage.newPostText = ''
+            this._callSubscriber(this._state)
+        }
+        else if(action.type==='NEW_TEXT_FUNCTION'){
+            this._state.profilePage.newPostText = action.text;
+            this._callSubscriber(this._state)
+        }
+    },
+
+
 }
 
 

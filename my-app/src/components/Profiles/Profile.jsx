@@ -9,7 +9,7 @@ const Profile=(props)=>{
                 <img className={s.banner_profile} src="https://pixy.org/src/474/4741466.jpg" alt=""/>
             </div>
             <ProfilrInfo/>
-        <MyPost date={props.profilePage.myPost} newPostText={props.profilePage.newPostText} newTextFunction={props.newTextFunction} addPost={props.addPost}/>
+        <MyPost date={props.profilePage.myPost} newPostText={props.profilePage.newPostText} dispatch={props.dispatch}/>
         </div>
     );
 }
