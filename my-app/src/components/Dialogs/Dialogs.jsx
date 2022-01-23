@@ -4,15 +4,23 @@ import MessageIncoming from "./Messages/MessagesIncoming";
 import MessageOutgoing from "./Messages/MessageOutgoing";
 import React from "react";
 
-const Dialogs = (props) => {
+import {newMessageActionCreator, updateNewMessageBody} from "../../redux/state";
 
-    let dialogsElement = props.state.dialogsData.map(el => (<DialogItem name={el.name} id={el.id}/>))
-    let messageEl = props.state.message.map(el => el.type === 'incoming' ? (<MessageIncoming time={el.time} text={el.text}/>) : (<MessageOutgoing time={el.time} text={el.text}/>))
-    let textNewMessage=React.createRef()
+const Dialogs = (props) => {
+    let state = props.store.getState().dialogsPage;
+
+    let dialogsElement = state.dialogsData.map(el => (<DialogItem name={el.name} id={el.id}/>))
+    let messageEl = state.message.map(el => el.type === 'incoming' ? (<MessageIncoming time={el.time} text={el.text}/>) : (<MessageOutgoing time={el.time} text={el.text}/>))
+
+
     let addMessage=()=>{
-        textNewMessage = textNewMessage.current.value
-        alert(textNewMessage)
+        props.dispatch(newMessageActionCreator())
     }
+    let updateNewMessageValue=(e)=>{
+        let text =e.target.value
+        props.dispatch(updateNewMessageBody(text))
+    }
+
     return (
         <div className={s.dialogs}>
             <div className={s.people_column}>
@@ -21,7 +29,7 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 {messageEl}
                 <div className={s.addMessages}>
-                    <input type="text" ref={textNewMessage}  placeholder='Введите сообщение'/>
+                    <input type="text" placeholder='Введите сообщение' onChange={updateNewMessageValue} value={state.newMessageText}/>
                     <button onClick={addMessage}>Отправить</button>
                 </div>
             </div>

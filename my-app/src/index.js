@@ -11,7 +11,7 @@ const contentElement = document.getElementById("root")
 export let rerenderEntireTree = () => {
     render(
         <BrowserRouter>
-            < App state={store.getState()} dispatch={store.dispatch.bind(store)}/>
+            < App state={store.getState()} store={store} dispatch={store.dispatch.bind(store)}/>
         </BrowserRouter>
         , contentElement
     );

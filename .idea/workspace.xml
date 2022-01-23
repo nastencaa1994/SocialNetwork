@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e80a7fff-45cb-496b-95c6-77cb4bd62191" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/my-app/src/redux/dialogs-reduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-app/src/redux/profile-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/DialogItem/DialogItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/DialogItem/DialogItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/components/Profiles/my_posts/MyPost.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-app/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/redux/state.js" afterDir="false" />
@@ -16,6 +19,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,8 +39,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-app/src/redux" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\YandexDisk\GitHub\SocialNetwork\my-app\src\redux" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -45,7 +61,8 @@
       <workItem from="1642350282473" duration="1015000" />
       <workItem from="1642405667991" duration="601000" />
       <workItem from="1642587775309" duration="1905000" />
-      <workItem from="1642852715995" duration="4918000" />
+      <workItem from="1642852715995" duration="5549000" />
+      <workItem from="1642940345151" duration="11931000" />
     </task>
     <servers />
   </component>
