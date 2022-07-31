@@ -20,7 +20,6 @@ const Dialogs = (props) => {
         let text =e.target.value
         props.dispatch(updateNewMessageBody(text))
     }
-
     return (
         <div className={s.dialogs}>
             <div className={s.people_column}>
