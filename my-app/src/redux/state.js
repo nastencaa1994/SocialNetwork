@@ -1,8 +1,8 @@
 import React from "react";
 
-
 const ADD_POST = 'ADD_POST'
 const NEW_TEXT_FUNCTION = 'NEW_TEXT_FUNCTION'
+
 const NEW_MESSAGE = 'NEW_MESSAGE'
 const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY'
 
@@ -14,13 +14,12 @@ let store = {
                 {id: 2, text: "It's my first pos", countLike: 14}
             ],
             newPostText: ""
-
         },
         dialogsPage: {
             message: [
                 {id: 1, type: 'incoming', time: '23:52', text: "hello Общий"},
-                {id: 2, type: 'incoming', time: '23:53', text: "How are you?"},
-                {id: 3, type: 'outgoing', time: '00:05', text: "hello"},
+                {id: 2, type: 'Outgoing', time: '23:53', text: "How are you?"},
+                {id: 3, type: 'incoming', time: '00:05', text: "hello"},
                 {id: 4, type: 'Outgoing', time: '00:06', text: "Fine"}
             ],
             newMessageText:'',
@@ -81,17 +80,19 @@ let store = {
             this._state.dialogsPage.newMessageText=action.text
             this._callSubscriber(this._state)
         }
-
         else if (action.type === NEW_MESSAGE) {
             let time = new Date();
-            let newMessage = {
-                id: 5,
-                type: 'outgoing',
-                time: String(time.toLocaleTimeString()),
-                text: this._state.dialogsPage.newMessageText
+            if(this._state.dialogsPage.newMessageText!==''){
+                let newMessage = {
+                    id: 5,
+                    type: 'outgoing',
+                    time: String(time.toLocaleTimeString()),
+                    text: this._state.dialogsPage.newMessageText
+                }
+                this._state.dialogsPage.message.push(newMessage)
+                this._callSubscriber(this._state)
+                this._state.dialogsPage.newMessageText=''
             }
-            this._state.dialogsPage.message.push(newMessage)
-            this._callSubscriber(this._state)
         }
     },
 }
@@ -101,7 +102,6 @@ export const addPostActionCreator = () => ({type: ADD_POST})
 export const onPostChangeActionCreator = (text) => ({
     type: NEW_TEXT_FUNCTION,
     text: text,
-
 })
 
 export const updateNewMessageBody = (text) => ({
@@ -109,7 +109,7 @@ export const updateNewMessageBody = (text) => ({
     text: text,
 })
 
-export const newMessageActionCreator = () => ({type: NEW_MESSAGE})
+export const sendMessageActionCreator = () => ({type: NEW_MESSAGE})
 
 
 export default store

@@ -4,7 +4,7 @@ import MessageIncoming from "./Messages/MessagesIncoming";
 import MessageOutgoing from "./Messages/MessageOutgoing";
 import React from "react";
 
-import {newMessageActionCreator, updateNewMessageBody} from "../../redux/state";
+import {sendMessageActionCreator, updateNewMessageBody} from "../../redux/state";
 
 const Dialogs = (props) => {
     let state = props.store.getState().dialogsPage;
@@ -13,10 +13,10 @@ const Dialogs = (props) => {
     let messageEl = state.message.map(el => el.type === 'incoming' ? (<MessageIncoming time={el.time} text={el.text}/>) : (<MessageOutgoing time={el.time} text={el.text}/>))
 
 
-    let addMessage=()=>{
-        props.dispatch(newMessageActionCreator())
+    let onSendMessageClick=()=>{
+        props.dispatch(sendMessageActionCreator())
     }
-    let updateNewMessageValue=(e)=>{
+    let onNewMessageChange=(e)=>{
         let text =e.target.value
         props.dispatch(updateNewMessageBody(text))
     }
@@ -29,8 +29,9 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 {messageEl}
                 <div className={s.addMessages}>
-                    <input type="text" placeholder='Введите сообщение' onChange={updateNewMessageValue} value={state.newMessageText}/>
-                    <button onClick={addMessage}>Отправить</button>
+                    <textarea placeholder='Введите сообщение' value={state.newMessageText} onChange={onNewMessageChange} >{state.newMessageText}</textarea>
+                    {/*<input type="text" placeholder='Введите сообщение' onChange={updateNewMessageValue} value={state.newMessageText}/>*/}
+                    <button onClick={onSendMessageClick}>Отправить</button>
                 </div>
             </div>
         </div>

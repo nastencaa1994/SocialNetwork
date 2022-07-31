@@ -19,8 +19,5 @@ const profileReducer=(state, action)=>{
             this._callSubscriber(this._state)
         }
 
-
-
-
     return state
 }

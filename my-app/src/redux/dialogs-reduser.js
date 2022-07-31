@@ -7,17 +7,18 @@ const dialogsReducer = (state, action) => {
         this._callSubscriber(this._state)
     }
     else if (action.type === NEW_MESSAGE) {
-        let time = new Date();
-        let newMessage = {
-            id: 5,
-            type: 'outgoing',
-            time: String(time.toLocaleTimeString()),
-            text: this._state.dialogsPage.newMessageText
+
+        if(this._state.dialogsPage.newMessageText!==''){
+            let time = new Date();
+            let newMessage = {
+                id: 5,
+                type: 'outgoing',
+                time: String(time.toLocaleTimeString()),
+                text: this._state.dialogsPage.newMessageText
+            }
+            this._state.dialogsPage.message.push(newMessage)
+            this._callSubscriber(this._state)
         }
-        this._state.dialogsPage.message.push(newMessage)
-        this._callSubscriber(this._state)
     }
-
-
     return state
 }
