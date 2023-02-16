@@ -9,7 +9,7 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Setting from "./components/Setting/Setting";
 
-
+//просто тестирую слияние веток
 const App = (props) => {
     return (
         <div className='app-wrapper'>
