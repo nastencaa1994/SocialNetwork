@@ -8,7 +8,7 @@ import React from "react";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Setting from "./components/Setting/Setting";
-
+//слияние
 //просто тестирую слияние веток
 const App = (props) => {
     return (
